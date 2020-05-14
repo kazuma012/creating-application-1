@@ -1,0 +1,8 @@
+top#index
+<h5>Book was successfully created.</h5>
+<% @lists.each do |list| %>
+  <p>Title</p>
+     <span>
+  	     <%= link_to list.title, todolist_path(list.id) %>
+     </span>
+<% end %>
